@@ -1,0 +1,2 @@
+# PrzyjaznyDziekanat
+Projekt MWO
