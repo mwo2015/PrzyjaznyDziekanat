@@ -1,0 +1,225 @@
+/* ---------------------------------------- */
+        /* GENERAL DOCUMENT STYLING */
+/* ---------------------------------------- */
+
+body {
+	background: #FFF;
+	color: #444;
+	font-size: 62.5%;
+	margin: 0 auto;
+	min-width: 20em;
+	max-width: 140em;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+::-moz-selection {
+	background: orange;
+}
+
+::selection  {
+	background: orange;
+}
+
+a:link, a:visited {
+	color: #444;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+/* ---------------------------------------- */
+          /* DOCUMENT HEADER STYLING */
+/* ---------------------------------------- */
+
+body > header {}
+
+
+
+
+
+/* ---------------------------------------- */
+          /* MAIN CONTENT STYLING */
+/* ---------------------------------------- */
+
+h1, h2, h3 {
+	letter-spacing: 4px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+section {
+	background: #FFD55E;
+	background: -moz-linear-gradient(top, #ffd65e 0%, #febf04 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffd65e 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffd65e 0%,#febf04 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffd65e 0%,#febf04 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffd65e 0%,#febf04 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+
+	border: solid 3px orange;
+	border-radius: 10px;
+	margin: 2em auto;
+	overflow: hidden;
+	padding: 1em;
+	text-align: center;
+}
+
+#panel-1 {
+	width: 45em;
+}
+
+#panel-2, #panel-3, #panel-4, #panel-5 {
+	font-size: 1.5em;
+	width: 60em;
+}
+
+
+form {
+	font-size: 1.5em;
+	margin: 1em auto;
+	text-align: center;
+	width: 23em;
+}
+
+[type='text'], [type='submit'], [type='password'] {
+	background: #FFFEAD;
+	border: solid 1px orange;
+	height: 2.8em;
+	margin: 0 1em;
+	padding: .5em;
+	transition: all .4s;
+	width: 16em;
+}
+
+[type='radio'] {
+	margin: .4em;
+}
+
+input:focus, [type='submit']:hover {
+	border: solid 1px #FA6900;
+	box-shadow: 0 0 6px #FA6900;
+	transition: all .4s;
+}
+
+.column {
+	display: inline-block;
+	height: 2em;
+	width: 4em;
+}
+
+[type='submit'] {
+	background: orange;
+}
+
+.small {
+	text-align: right;
+	margin: 0;
+}
+
+select {
+	background: #FFFEAD;
+	border: solid 1px orange;
+	height: 2.5em;
+	margin: 0 1em;
+	padding: .5em;
+	transition: all .4s;
+	width: 16em;
+}
+
+.wrapper1 {
+	border-bottom: solid 1px orange;
+	border-top: solid 1px orange;
+	display: inline-block;
+	margin: 1em;
+	padding: .5em;
+	width: 15em;
+}
+
+/* !!!! */
+/* #panel-2 div {
+	background: orange;
+	border: solid 1px orange;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 1.6em;
+	height: 100px;
+	margin: 5px;
+	padding: 27px 10px;
+	vertical-align: middle;
+	width: 100px;
+} */
+
+.radio {
+	width: 6em;
+	background: red;
+}
+
+#panel-2 [type='submit'] {
+	margin: 20px;
+}
+
+.highlight {
+	border: solid 1px orange;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.highlight2 {
+	border: solid 1px orange;
+	border-radius: 1em;
+	display: inline-block;
+	height: 25px;
+	margin: 2px;
+	padding: 3px;
+	width: 25px;
+}
+
+/* ---------------------------------------- */
+        /* DOCUMENT FOOTER STYLING */
+/* ---------------------------------------- */
+
+body > footer {}
+
+
+
+
+
+/* ---------------------------------------- */
+             /* CROSS-BROWSER */
+/* ---------------------------------------- */
+
+-moz-property: ;
+-ms-property: ;
+-o-property: ;
+-webkit-property: ;
+
+
+/* ---------------------------------------- */
+                 /* RWD */
+/* ---------------------------------------- */
+
+@media only screen and (max-width: 480px) {} /* smartphones in landscape and portrait position */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {} /* tablets in portrait position */
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {} /* tablets in landscape position */
+
+@media only screen and (min-width: 980px) and (max-width: 1199px) {} /* desktop screens */
+
+@media only screen and (min-width: 1200px) {} /* high resolution desktop screen */
