@@ -45,7 +45,7 @@
 			<h2>Panel studenta [1/2 - DEMO]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Jan Kowalski</span></p>
 			<div class='wrapper1'>
-				<input type='radio' name='semestr' id='semestr1' />
+				<input type='radio' name='semestr' id='semestr1' checked='checked' />
 				<label for='semestr1'>Semestr 1</label>
 				<br />
 				<input type='radio' name='semestr' id='semestr2' />
@@ -53,11 +53,11 @@
 			</div>
 			<p>Moje przedmioty:</p>
 			<select>
-				<option>Przedmiot 1</option>
-				<option>Przedmiot 2</option>
-				<option>Przedmiot 3</option>
-				<option>Przedmiot 4</option>
-				<option>Przedmiot 5</option>
+				<option>Algorytmika - wykład</option>
+				<option>Algorytmika - laboratorium</option>
+				<option>Sieci komputerowe - laboratorium</option>
+				<option>Podstawy Java - wykład</option>
+				<option>Podstawy Java - laboratorium</option>
 			</select>
 			<br />
 			<input type='submit' value='OK' />
@@ -69,7 +69,7 @@
 			<h1>Przyjazny dziekanat</h1>
 			<h2>Panel studenta [2/2 - DEMO]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Jan Kowalski</span></p>
-			<p>Wybrany przedmiot: <span class='highlight'>Przedmiot 2</span></p>
+			<p>Wybrany przedmiot: <span class='highlight'>Sieci komputerowe - laboratorium</span></p>
 
 			<div class='wrapper1'>
 				<p>Oceny: <span class='highlight2'>3</span><span class='highlight2'>5</span><span class='highlight2'>4</span><span class='highlight2'>4</span></p>
@@ -87,13 +87,67 @@
 			<h2>Panel prowadzącego [1/x - DEMO]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Adam Nowak</span></p>
 
+			<form>
+				<div>
+					<p class='column'>Przedmioty:</p>
+					<select>
+						<option>wszystkie</option>
+						<option>Podstawy Java - wykład</option>
+						<option>Podstawy Java - laboratorium</option>
+					</select>
+				</div>
+				<div>
+					<p class='column'>Tryb:</p>
+					<select>
+						<option>wszystkie</option>
+						<option>Studia dzienne</option>
+						<option>Studia zaoczne</option>
+						<option>Studia podyplomowe</option>
+					</select>
+				</div>
+				<div>
+					<p class='column'>Wydział:</p>
+					<select>
+						<option>wszystkie</option>
+						<option>EAIE</option>
+						<option>IMIR</option>
+					</select>
+				</div>
+			</form>
+			<input type='submit' value='Wyświetl' />
+
+		</section>
+
+<hr>
+
+		<section id='panel-5'>
+			<h1>Przyjazny dziekanat</h1>
+			<h2>Panel prowadzącego [2/x - DEMO]</h2>
+			<p>Zalogowano jako: <span class='highlight'>Adam Nowak</span></p>
+			<p>Wybrano: <span class='highlight'>Podstawy Java - laboratorium</span> | <span class='highlight'>Studia dzienne</span> | <span class='highlight'>EAIE</span></p>
+			<p>Znaleziono:</p>
+			<p><input type='submit' value='Grupa 1 - semestr 1' /></p>
+			<p><input type='submit' value='Grupa 2 - semestr 1' /></p>
+			<p><input type='submit' value='Grupa 3 - semestr 1' /></p>
+			<p><input type='submit' value='Grupa 1 - semestr 5' /></p>
+			<p><input type='submit' value='Grupa 2 - semestr 5' /></p>
+		</section>
+
+<hr>
+
+		<section id='panel-6'>
+			<h1>Przyjazny dziekanat</h1>
+			<h2>Panel prowadzącego [3/x - DEMO]</h2>
+			<p>Zalogowano jako: <span class='highlight'>Adam Nowak</span></p>
+			<p>Wybrano: <span class='highlight'>Podstawy Java - laboratorium</span> | <span class='highlight'>Studia dzienne</span> | <span class='highlight'>EAIE</span></p>
+
 			<p>... TODO ...</p>
 
 		</section>
 
 <hr>
 
-		<section id='panel-4'>
+		<section id='panel-6'>
 			<h1>Przyjazny dziekanat</h1>
 			<h2>Panel pracownika administracji [1/x - DEMO]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
