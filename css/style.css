@@ -149,8 +149,8 @@ select {
 	border-top: solid 1px orange;
 	display: inline-block;
 	margin: 1em;
-	padding: .5em;
-	width: 15em;
+	padding: .2em;
+	text-align: left;
 }
 
 /* !!!! */
@@ -188,7 +188,7 @@ select {
 	display: inline-block;
 	height: 25px;
 	margin: 2px;
-	padding: 3px;
+	padding: 2px 7px;
 	width: 25px;
 }
 
