@@ -84,8 +84,9 @@ section {
 	width: 45em;
 }
 
-#panel-2, #panel-3, #panel-4, #panel-5, #panel-6, #panel-7 {
+.mockup {
 	font-size: 1.5em;
+	position: relative;
 	width: 60em;
 }
 
@@ -120,7 +121,8 @@ input:focus, [type='submit']:hover {
 .column {
 	display: inline-block;
 	height: 2em;
-	width: 5em;
+	vertical-align: middle;
+	width: 6em;
 }
 
 [type='submit'] {
@@ -197,15 +199,72 @@ select {
 #panel-5 a {
 	background: orange;
 	border: solid 1px orange;
+	border-radius: 5px;
 	display: inline-block;
-	margin: 2px;
 	padding: .5em;
 }
 
 #panel-5 a:hover {
-	background: transparent;
+	background: #FFFEAD;
 	text-decoration: none;
 	transition: all .5s;
+}
+
+
+table {
+	border: solid 1px #FFFEAD;
+	margin: 0 auto;
+	width: 95%;
+}
+
+thead {
+	border-bottom: solid 1px #FFFEAD;
+}
+
+table th {
+	background: #FFFEAD;
+	font-weight: normal;
+	height: 40px;
+}
+
+td {
+	padding: 5px 2px;
+}
+
+tr:hover {
+	background: orange;
+}
+
+.grades {
+	background: #FFFEAD;
+	border: solid 1px orange;
+	padding: 2px 5px;
+	width: 32px;
+}
+
+.side-button {
+	border: solid 1px orange;
+	border-radius: 5px;
+	cursor: pointer; 
+	cursor: hand;
+	font-size: .9em;
+	padding: 5px;
+	position: absolute;
+	top: 10px;
+	transition: .4s;
+}
+
+.side-button:hover {
+	background: orange;
+	transition: .4s;
+}
+
+.left {
+	left: 10px;
+}
+
+.right {
+	right: 10px;
 }
 
 /* ---------------------------------------- */
