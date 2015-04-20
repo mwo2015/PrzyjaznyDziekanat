@@ -153,20 +153,6 @@ select {
 	text-align: left;
 }
 
-/* !!!! */
-/* #panel-2 div {
-	background: orange;
-	border: solid 1px orange;
-	border-radius: 5px;
-	display: inline-block;
-	font-size: 1.6em;
-	height: 100px;
-	margin: 5px;
-	padding: 27px 10px;
-	vertical-align: middle;
-	width: 100px;
-} */
-
 .radio {
 	width: 6em;
 	background: red;
@@ -192,24 +178,24 @@ select {
 	width: 25px;
 }
 
-#panel-4 form {
+#panel-4 form, #panel-7 form, #panel-8 form, #panel-9 form {
 	font-size: 1em;
 }
 
-#panel-5 a {
+#panel-5 a, #panel-6 a, #panel-9 a {
 	background: orange;
 	border: solid 1px orange;
 	border-radius: 5px;
 	display: inline-block;
 	padding: .5em;
+	transition: all ease-out .5s;
 }
 
-#panel-5 a:hover {
+#panel-5 a:hover, #panel-6 a:hover, #panel-9 a:hover {
 	background: #FFFEAD;
 	text-decoration: none;
-	transition: all .5s;
+	transition: all ease-out .5s;
 }
-
 
 table {
 	border: solid 1px #FFFEAD;
