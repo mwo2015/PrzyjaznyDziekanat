@@ -1,9 +1,9 @@
-# PrzyjaznyDziekanat
+﻿# PrzyjaznyDziekanat
 Projekt MWO
 
-Mockupy do obejrzenia:
+Mockupy do obejrzenia (aktualizacja: 20.04.2015):
 
-http://rawgit.com/mwo2015/PrzyjaznyDziekanat/master/index.html
+http://rawgit.com/mwo2015/PrzyjaznyDziekanat/master/view_mockup/index.html
 
 java_dev -> skopiowane z SVN
 
