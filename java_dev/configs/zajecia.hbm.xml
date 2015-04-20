@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class name="persistence.Zajecia" table="ZAJECIA">
+      <meta attribute="class-description">
+         Informacje na temat zajec. 
+      </meta>
+      <id name="id" type="int" column="ZAJECIA_ID">
+         <generator class="native"/>
+      </id>
+      <property name="nazwaZajec" type="string" column="NAZWA_ZAJEC"/>
+      <property name="typZajec" column="TYP_ZAJEC">
+      	<type name="org.hibernate.type.EnumType">
+      		<param name="enumClass">enums.TypZajec</param>
+      		<param name="useNamed">true</param>
+      	</type>
+      </property>
+      <!--<set name="studenci" table="STUD_ZAJ_REL" fetch="select" cascade="all">
+            <key column="ZAJECIA_ID" />
+            <many-to-many class="Student" column="STUDENT_ID" />
+        </set>  -->
+      
+       <!-- <many-to-one name="prowadzacy" class="Prowadzacy">
+      	<column name="PROWADZACY_ID" not-null="true"/>
+      </many-to-one>  -->
+      
+
+      
+
+   </class>
+</hibernate-mapping>

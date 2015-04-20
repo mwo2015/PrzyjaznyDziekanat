@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class name="persistence.PracownikAdministracji" table="PRACOW_ADMINISTRACJI">
+      <meta attribute="class-description">
+         Informacje na temat pracownikow administracji. 
+      </meta>
+      <id name="id" type="int" column="PRAC_ADM_ID">
+         <generator class="native"/>
+      </id>
+      <property name="imie" column="IMIE" type="string"/>
+      <property name="nazwisko" column="NAZWISKO" type="string"/>
+ 
+   </class>
+</hibernate-mapping>

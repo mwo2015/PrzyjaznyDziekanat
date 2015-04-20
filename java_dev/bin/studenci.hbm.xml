@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="persistence.Student" table="STUDENCI">
+      <meta attribute="class-description">
+         Informacje na temat studentow. 
+      </meta>
+      <id name="id" type="int" column="STUDENT_ID">
+         <generator class="native"/>
+      </id>
+      <property name="imie" column="IMIE" type="string"/>
+      <property name="nazwisko" column="NAZWISKO" type="string"/>
+      
+      <property name="rodzajStudiow" column="RODZAJ_STUDIOW">
+      	<type name="org.hibernate.type.EnumType">
+      		<param name="enumClass">enums.RodzajStudiow</param>
+      		<param name="useNamed">true</param>
+      	</type>
+      </property>      
+      <property name="trybStudiow" column="TRYB_STUDIOW">
+      	<type name="org.hibernate.type.EnumType">
+      		<param name="enumClass">enums.TrybStudiow</param>
+      		<param name="useNamed">true</param>
+      	</type>
+      </property>
+      <!--<set name="zajecia" table="STUD_ZAJ_REL" fetch="select" cascade="all">
+            <key column="STUDENT_ID" />
+            <many-to-many class="Zajecia" column="ZAJECIA_ID" />
+        </set>  -->
+   </class>
+</hibernate-mapping>
