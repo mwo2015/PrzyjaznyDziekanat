@@ -1,0 +1,29 @@
+{
+    "name": "league/booboo",
+    "type": "library",
+    "description": "Provides an error handler for PHP that can execute a stack of handlers for various purposes.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brandon Savage",
+            "homepage": "https://www.brandonsavage.net/"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "psr/log": "~1.0"
+    },
+    "suggest": {
+        "raven/raven": "Use Raven for passing errors to Sentry."
+    },
+    "autoload": {
+        "psr-4": {
+            "League\\BooBoo\\": "src/"
+        }
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.9",
+        "phpunit/phpunit": "~4.3",
+        "raven/raven": "0.10.0"
+    }
+}
