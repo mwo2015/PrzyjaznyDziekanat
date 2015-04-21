@@ -361,29 +361,29 @@
 
 		<section class='mockup' id='panel-6'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [1/x - DEMO]</h2>
+			<h2>Panel pracownika administracji [1/7]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
 			<p>Co chcesz zrobić:</p>
 			<table>
 				<thead>
 						<th>Studenci</th>
-						<th>Pracownicy</th>
+						<th>Prowadzący</th>
 						<th>Zajęcia</th>
-						<th>Raporty</th>
+						<th>Inne</th>
 				</thead>	
 				<tbody>
 					<tr>
 						<td><a href='#'>Dodaj</a></td>
 						<td><a href='#'>Dodaj</a></td>
 						<td><a href='#'>Dodaj</a></td>
-						<td><a href='#'>Generuj</a></td>
+						<td><a href='#'>Generuj raport</a></td>
 					</tr>
 					<tr>
 						<td><a href='#'>Edytuj</a></td>
 						<td><a href='#'>Edytuj</a></td>
 						<td><a href='#'>Edytuj</a></td>
-						<td></td>
+						<td><a href='#'>Zdefinuj semestr</a></td>
 					</tr>
 					<tr>
 						<td></td>
@@ -394,6 +394,7 @@
 				</tbody>	
 			</table>
 			
+			<div class='side-button left'>Wstecz</div>
 			<div class='side-button right'>Wyloguj</div>
 
 		</section>
@@ -402,7 +403,7 @@
 
 		<section class='mockup' id='panel-7'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [1/x - DEMO]</h2>
+			<h2>Panel pracownika administracji [2/7]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
 			<p>Dodanie studenta:</p>
@@ -464,7 +465,7 @@
 				</div>
 			</form>
 
-
+			<div class='side-button left'>Wstecz</div>
 			<div class='side-button right'>Wyloguj</div>
 
 		</section>
@@ -473,7 +474,7 @@
 
 		<section class='mockup' id='panel-8'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [1/x - DEMO]</h2>
+			<h2>Panel pracownika administracji [3/7]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
 			<p>Dodanie prowadzącego:</p>
@@ -502,16 +503,12 @@
 				<div>
 					<p class='column'>Email:</p>
 					<input type='text' />
-				</div>
-				<div>
-					<p class='column'>Przedmioty:</p>
-					<input type='text' />
 					<p class='column'></p>
 					<input type='submit' value='Zapisz' />
 				</div>
 			</form>
 
-
+			<div class='side-button left'>Wstecz</div>
 			<div class='side-button right'>Wyloguj</div>
 
 		</section>
@@ -520,7 +517,7 @@
 
 		<section class='mockup' id='panel-9'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [1/x - DEMO]</h2>
+			<h2>Panel pracownika administracji [4/7]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
 			<p>Dodanie zajęć:</p>
@@ -551,13 +548,16 @@
 				</div>
 				<div>
 					<p class='column'>Prowadzący:</p>
-					<input type='text' />
+					<p><input id='prow_1' type='checkbox' /> <label for='prow_1'>prof. Gąbka Baltazar</label>
+					<input id='prow_2'type='checkbox' /> <label for='prow_2'>dr Nowak Jan </label><br />
+					<input id='prow_3'type='checkbox' /> <label for='prow_3'>prof. Kowalski Jan</label>
+					<input id='prow_4'type='checkbox' /> <label for='prow_4'>prof. Wiśniewski Henryk</label> </p>
 					<p class='column'></p>
 					<input type='submit' value='Zapisz' />
 				</div>
 			</form>
 
-
+			<div class='side-button left'>Wstecz</div>
 			<div class='side-button right'>Wyloguj</div>
 
 		</section>
@@ -566,7 +566,7 @@
 
 		<section class='mockup' id='panel-9'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [1/x - DEMO]</h2>
+			<h2>Panel pracownika administracji [5/7]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
 			<p>Edytowanie danych studentów:</p>
@@ -622,28 +622,163 @@
 			</table>
 
 
-			<p>Wybrano:</p>
+			<p>Wybrano: <span class='highlight'>Jan Nowak</span> - <span class='highlight'>Nr indeksu: 234232</span>
+			<p>Edycja danych studenta:</p>
+			<form>
+			<div>
+					<p class='column'>Imię:</p>
+					<input type='text' value='Jan' />
+				</div>
+				<div>
+					<p class='column'>Nazwisko:</p>
+					<input type='text' value='Nowak' />
+				</div>
+				<div>
+					<p class='column'>Adres:</p>
+					<input type='text' value='ul. Wawel 1, 31-333 Kraków' />
+				</div>
+				<div>
+					<p class='column'>Telefon:</p>
+					<input type='text' value='345 567 789' />
+				</div>
+				<div>
+					<p class='column'>Email:</p>
+					<input type='text' value='jannowak@wp.pl' />
+				</div>
+				<div>
+					<p class='column'>Kierunek studiów:</p>
+					<select>
+						<option>Elektronika</option>
+						<option>Informatyka</option>
+						<option>Automatyka i Robotyka</option>
+						<option>Elektrotechnika</option>
+					</select>
+				</div>
+				<div>
+					<p class='column'>Rok studiów:</p>
+					<select>
+						<option>Rok 1</option>
+						<option>Rok 2</option>
+						<option>Rok 3</option>
+						<option>Rok 4</option>
+						<option>Rok 5</option>
+					</select>
+				</div>
+				<div>
+					<p class='column'>Grupa:</p>
+					<select>
+						<option>Grupa 1</option>
+						<option>Grupa 2</option>
+						<option>Grupa 3</option>
+						<option>Grupa 4</option>
+					</select>
+				</div>
+				<div>
+					<p class='column'>Tryb studiów:</p>
+					<select>
+						<option>Tryb normalny</option>
+						<option>Tryb warunkowy</option>
+						<option>Urlop</option>
+					</select>
+					<p class='column'></p>
+					<input type='submit' value='Zapisz' />
+				</div>
+			</form>
 
-... TODO ... - mozna edytowac dane osobowe, ZMIENIĆ tryb studiów (normlany (domyślnie) vs warunkowy vs urlop), oceny i obecnosci tylko do odczytu (?)
+			<p>Oceny i obecności studenta:</p>
 
+			<div class='wrapper1'>
+				<input type='radio' name='_semestr' id='_semestr1' checked='checked' />
+				<label for='_semestr1'>Semestr 1</label>
+				<br />
+				<input type='radio' name='_semestr' id='_semestr2' />
+				<label for='_semestr2'>Semestr 2</label>
+			</div>
+			<p></p>
+			<table>
+				<thead>
+						<th>Przedmiot</th>
+						<th>Prowadzący</th>
+						<th>Ocena końcowa</th>
+						<th>Obecności</th>
+				</thead>	
+				<tbody>
+					<tr>
+						<td>Elektronika</td>
+						<td>prof. Gąbka Baltazar</td>
+						<td>4</td>
+						<td>90%</td>
+					</tr>
+					<tr>
+						<td>Informatyka</td>
+						<td>dr Nowak Jan</td>
+						<td>2</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td>Automatyka i Robotyka</td>
+						<td>prof. Kowalski Jan</td>
+						<td>3</td>
+						<td>77%</td>
+					</tr>
+					<tr>
+						<td>Elektrotechnika</td>
+						<td>prof. Wiśniewski Henryk</td>
+						<td>5</td>
+						<td>90%</td>
+					</tr>
+
+				</tbody>	
+			</table>
+
+			<div class='side-button left'>Wstecz</div>
 			<div class='side-button right'>Wyloguj</div>
 
 		</section>
 
-<hr>
+	<hr>
 
-		<section class='mockup' id='panel-9'>
+		<section class='mockup' id='panel-10'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [1/x - DEMO]</h2>
+			<h2>Panel pracownika administracji [6/7]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
 			<p>Generowanie raportów:</p>
 		
 
-... TODO (powinno dac się wypisać studentów kwalifikujących się do trybu warunkowego ?) ... 
+... TODO ... 
 
+			<div class='side-button left'>Wstecz</div>
 			<div class='side-button right'>Wyloguj</div>
 
 		</section>
+
+	<hr>
+
+		<section class='mockup' id='panel-11'>
+			<h1>Przyjazny dziekanat</h1>
+			<h2>Panel pracownika administracji [7/7]</h2>
+			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
+
+			<p>Definiowanie zakończenia semestru:</p>
+				<form>
+				<div>
+					<p class='column'>Koniec 1 semestru:</p>
+					<input type='text' value='02-02-2015' />
+				</div>
+				<div>
+					<p class='column'>Koniec 2 semestru:</p>
+					<input type='text' value='30-06-2015' />
+					<p class='column'></p>
+					<input type='submit' value='Zapisz' />
+				</div>
+			</form>
+
+			<div class='side-button left'>Wstecz</div>
+			<div class='side-button right'>Wyloguj</div>
+
+		</section>
+
+
 	</body>
 </html>

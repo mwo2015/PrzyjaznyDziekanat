@@ -8,3 +8,7 @@ $(document).ready(function() {
 		$(this).find('a').css('border', 'solid 1px orange' );
 		});
 });
+
+$(function() {
+	$("#datepicker").datepicker();
+});

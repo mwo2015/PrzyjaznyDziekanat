@@ -125,6 +125,10 @@ input:focus, [type='submit']:hover {
 	width: 6em;
 }
 
+.column~input {
+	width: 16em;
+}
+
 [type='submit'] {
 	background: orange;
 }
@@ -178,11 +182,11 @@ select {
 	width: 25px;
 }
 
-#panel-4 form, #panel-7 form, #panel-8 form, #panel-9 form {
+#panel-4 form, #panel-7 form, #panel-8 form, #panel-9 form, #panel-10 form, #panel-11 form {
 	font-size: 1em;
 }
 
-#panel-5 a, #panel-6 a, #panel-9 a {
+#panel-5 a, #panel-6 a, #panel-9 a, #panel-10 a, #panel-11 a {
 	background: orange;
 	border: solid 1px orange;
 	border-radius: 5px;
@@ -191,7 +195,7 @@ select {
 	transition: all ease-out .5s;
 }
 
-#panel-5 a:hover, #panel-6 a:hover, #panel-9 a:hover {
+#panel-5 a:hover, #panel-6 a:hover, #panel-9 a:hover, #panel-10 a:hover, #panel-11 a:hover {
 	background: #FFFEAD;
 	text-decoration: none;
 	transition: all ease-out .5s;
@@ -252,37 +256,3 @@ tr:hover {
 .right {
 	right: 10px;
 }
-
-/* ---------------------------------------- */
-        /* DOCUMENT FOOTER STYLING */
-/* ---------------------------------------- */
-
-body > footer {}
-
-
-
-
-
-/* ---------------------------------------- */
-             /* CROSS-BROWSER */
-/* ---------------------------------------- */
-
--moz-property: ;
--ms-property: ;
--o-property: ;
--webkit-property: ;
-
-
-/* ---------------------------------------- */
-                 /* RWD */
-/* ---------------------------------------- */
-
-@media only screen and (max-width: 480px) {} /* smartphones in landscape and portrait position */
-
-@media only screen and (min-width: 481px) and (max-width: 767px) {} /* tablets in portrait position */
-
-@media only screen and (min-width: 768px) and (max-width: 979px) {} /* tablets in landscape position */
-
-@media only screen and (min-width: 980px) and (max-width: 1199px) {} /* desktop screens */
-
-@media only screen and (min-width: 1200px) {} /* high resolution desktop screen */
