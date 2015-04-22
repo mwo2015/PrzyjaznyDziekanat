@@ -182,7 +182,7 @@ select {
 	width: 25px;
 }
 
-#panel-4 form, #panel-7 form, #panel-8 form, #panel-9 form, #panel-10 form, #panel-11 form {
+#panel-4 form, #panel-7 form, #panel-8 form, #panel-9 form, #panel-10 form, #panel-11 form, #panel-12 form {
 	font-size: 1em;
 }
 
@@ -256,3 +256,24 @@ tr:hover {
 .right {
 	right: 10px;
 }
+
+.wide {
+	width: 90%;
+}
+
+.floated-left {
+	display: inline;
+}
+
+fieldset {
+	border: solid 1px orange;
+}
+
+.title {
+	background: #A52A2A;
+	border-radius: 4px;
+	color: #FFF;
+	margin: 12px auto;
+	padding: 7px;
+	width: 40%;
+} 

@@ -54,7 +54,7 @@
 				<input type='radio' name='semestr' id='semestr2' />
 				<label for='semestr2'>Semestr 2</label>
 			</div>
-			<p>Moje przedmioty:</p>
+			<p class='title'>Moje przedmioty:</p>
 			<select>
 				<option>Algorytmika - wykład</option>
 				<option>Algorytmika - laboratorium</option>
@@ -94,7 +94,7 @@
 			<h1>Przyjazny dziekanat</h1>
 			<h2>Panel prowadzącego [1/3]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Adam Nowak</span></p>
-			<p>Moje zajęcia:</p>
+			<p class='title'>Moje zajęcia:</p>
 			<form>
 				<div>
 					<p class='column'>Przedmiot:</p>
@@ -163,7 +163,7 @@
 			<h1>Przyjazny dziekanat</h1>
 			<h2>Panel prowadzącego [2/3]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Adam Nowak</span></p>
-			<p>Znaleziono zajęcia:</p>
+			<p class='title'>Znaleziono zajęcia:</p>
 			<table>
 				<thead>
 						<th>Przedmiot</th>
@@ -227,9 +227,10 @@
 			<p>Zalogowano jako: <span class='highlight'>Adam Nowak</span></p>
 			<p>Wybrano: <span class='highlight'>Podstawy Java - laboratorium</span> - <span class='highlight'>Informatyka</span> - <span class='highlight'>Studia dzienne</span> - <span class='highlight'>Rok 3</span> - <span class='highlight'>Semestr 1</span> - <span class='highlight'>Grupa 1</span></p>
 
-			<p>Lista studentów:</p>
+			<p class='title'>Lista studentów:</p>
 			<table>
 				<thead>
+						<th><input type='checkbox' checked='checked' title='Zaznacz wszystkich studentów' /></th>
 						<th>Student</th>
 						<th>Z1<br /><input type='checkbox' title='Obecność prowadzącego' /></th>
 						<th>Z2<br /><input type='checkbox' title='Obecność prowadzącego' /></th>
@@ -248,6 +249,7 @@
 				</thead>	
 				<tbody>
 					<tr>
+						<td><input type='checkbox' checked='checked' title='Zaznacz studenta' /></td>
 						<td>Adamowicz Adam</td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' title='Obecność' /></td>
@@ -273,6 +275,7 @@
 						<td><input class='grades total' type='input' checked='checked' value='2' /></td>
 					</tr>
 					<tr>
+						<td><input type='checkbox' checked='checked' title='Zaznacz studenta' /></td>
 						<td>Domownik Jan</td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
@@ -298,6 +301,7 @@
 						<td><input class='grades total' type='input' checked='checked' value='4' /></td>
 					</tr>
 					<tr>
+						<td><input type='checkbox' checked='checked' title='Zaznacz studenta' /></td>
 						<td>Kamilowicz Kamil</td>
 						<td><input type='checkbox' title='Obecność' /></td>
 						<td><input type='checkbox' title='Obecność' /></td>
@@ -322,7 +326,8 @@
 						</td>
 						<td><input class='grades total' type='input' checked='checked' value='4.5' /></td>
 					</tr>
-					<tr>
+					<tr>	
+						<td><input type='checkbox' checked='checked' title='Zaznacz studenta' /></td>
 						<td>Piotrowski Piotr</td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
@@ -351,6 +356,7 @@
 			</table>
 			<p></p>
 			<input type='submit' value='Zapisz zmiany' />
+			<input type='submit' value='Wyślij maila do zaznaczonych' />
 
 			<div class='side-button left'>Wstecz</div>
 			<div class='side-button right'>Wyloguj</div>
@@ -361,10 +367,10 @@
 
 		<section class='mockup' id='panel-6'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [1/7]</h2>
+			<h2>Panel pracownika administracji [1/8]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
-			<p>Co chcesz zrobić:</p>
+			<p class='title'>Dostępne czynności:</p>
 			<table>
 				<thead>
 						<th>Studenci</th>
@@ -377,13 +383,13 @@
 						<td><a href='#'>Dodaj</a></td>
 						<td><a href='#'>Dodaj</a></td>
 						<td><a href='#'>Dodaj</a></td>
-						<td><a href='#'>Generuj raport</a></td>
+						<td><a href='#'>Statystyki / raporty</a></td>
 					</tr>
 					<tr>
 						<td><a href='#'>Edytuj</a></td>
 						<td><a href='#'>Edytuj</a></td>
 						<td><a href='#'>Edytuj</a></td>
-						<td><a href='#'>Zdefinuj semestr</a></td>
+						<td><a href='#'>Zakończenie semestru</a></td>
 					</tr>
 					<tr>
 						<td></td>
@@ -403,36 +409,41 @@
 
 		<section class='mockup' id='panel-7'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [2/7]</h2>
+			<h2>Panel pracownika administracji [2/8]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
-			<p>Dodanie studenta:</p>
+			<p class='title'>Dodanie studenta:</p>
 			
-			<form>
-				<div>
-					<p class='column'>Nr albumu:</p>
-					<input type='text' class='medium' readonly value='00054743' />
-				</div>
-				<div>
-					<p class='column'>Imię:</p>
-					<input type='text' />
-				</div>
-				<div>
-					<p class='column'>Nazwisko:</p>
-					<input type='text' />
-				</div>
-				<div>
-					<p class='column'>Adres:</p>
-					<input type='text' />
-				</div>
-				<div>
-					<p class='column'>Telefon:</p>
-					<input type='text' />
-				</div>
-				<div>
-					<p class='column'>Email:</p>
-					<input type='text' />
-				</div>
+			<form class='wide'>
+				<fieldset>
+					<legend>Dane osobowe</legend>
+					<div class='floated-left'>
+						<p class='column'>Nr albumu:</p>
+						<input type='text' class='medium' readonly value='00054743' />
+					</div>
+					<div class='floated-left'>
+						<p class='column'>Imię:</p>
+						<input type='text' />
+					</div>
+					<div class='floated-left'>
+						<p class='column'>Nazwisko:</p>
+						<input type='text' />
+					</div>
+					<div class='floated-left'>
+						<p class='column'>Adres:</p>
+						<input type='text' />
+					</div>
+					<div class='floated-left'>
+						<p class='column'>Telefon:</p>
+						<input type='text' />
+					</div>
+					<div class='floated-left'>
+						<p class='column'>Email:</p>
+						<input type='text' />
+					</div>
+				</fieldset>
+				</form>
+				<form>
 				<div>
 					<p class='column'>Kierunek studiów:</p>
 					<select>
@@ -474,38 +485,38 @@
 
 		<section class='mockup' id='panel-8'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [3/7]</h2>
+			<h2>Panel pracownika administracji [3/8]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
-			<p>Dodanie prowadzącego:</p>
+			<p class='title'>Dodanie prowadzącego:</p>
 			
 			<form>
-				<div>
-					<p class='column'>Imię:</p>
-					<input type='text' />
-				</div>
-				<div>
-					<p class='column'>Nazwisko:</p>
-					<input type='text' />
-				</div>
-				<div>
-					<p class='column'>Tytuł naukowy:</p>
-					<input type='text' />
-				</div>
-				<div>
-					<p class='column'>Adres:</p>
-					<input type='text' />
-				</div>
-				<div>
-					<p class='column'>Telefon:</p>
-					<input type='text' />
-				</div>
-				<div>
-					<p class='column'>Email:</p>
-					<input type='text' />
-					<p class='column'></p>
-					<input type='submit' value='Zapisz' />
-				</div>
+					<div>
+						<p class='column'>Imię:</p>
+						<input type='text' />
+					</div>
+					<div>
+						<p class='column'>Nazwisko:</p>
+						<input type='text' />
+					</div>
+					<div>
+						<p class='column'>Tytuł naukowy:</p>
+						<input type='text' />
+					</div>
+					<div>
+						<p class='column'>Adres:</p>
+						<input type='text' />
+					</div>
+					<div>
+						<p class='column'>Telefon:</p>
+						<input type='text' />
+					</div>
+					<div>
+						<p class='column'>Email:</p>
+						<input type='text' />
+						<p class='column'></p>
+						<input type='submit' value='Zapisz' />
+					</div>
 			</form>
 
 			<div class='side-button left'>Wstecz</div>
@@ -517,10 +528,10 @@
 
 		<section class='mockup' id='panel-9'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [4/7]</h2>
+			<h2>Panel pracownika administracji [4/8]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
-			<p>Dodanie zajęć:</p>
+			<p class='title'>Dodanie zajęć:</p>
 			
 			<form>
 				<div>
@@ -547,12 +558,14 @@
 					</select>
 				</div>
 				<div>
-					<p class='column'>Prowadzący:</p>
-					<p><input id='prow_1' type='checkbox' /> <label for='prow_1'>prof. Gąbka Baltazar</label>
-					<input id='prow_2'type='checkbox' /> <label for='prow_2'>dr Nowak Jan </label><br />
-					<input id='prow_3'type='checkbox' /> <label for='prow_3'>prof. Kowalski Jan</label>
-					<input id='prow_4'type='checkbox' /> <label for='prow_4'>prof. Wiśniewski Henryk</label> </p>
-					<p class='column'></p>
+					<fieldset>
+						<legend>Prowadzący</legend>
+						<p><input id='prow_1' type='checkbox' /> <label for='prow_1'>prof. Gąbka Baltazar</label>
+						<input id='prow_2'type='checkbox' /> <label for='prow_2'>dr Nowak Jan </label><br />
+						<input id='prow_3'type='checkbox' /> <label for='prow_3'>prof. Kowalski Jan</label>
+						<input id='prow_4'type='checkbox' /> <label for='prow_4'>prof. Wiśniewski Henryk</label> </p>
+					</fieldset>
+					<p></p>
 					<input type='submit' value='Zapisz' />
 				</div>
 			</form>
@@ -566,10 +579,10 @@
 
 		<section class='mockup' id='panel-9'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [5/7]</h2>
+			<h2>Panel pracownika administracji [5/8]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
-			<p>Edytowanie danych studentów:</p>
+			<p class='title'>Edytowanie danych studentów:</p>
 			
 			<form>
 				<div>
@@ -623,28 +636,33 @@
 
 
 			<p>Wybrano: <span class='highlight'>Jan Nowak</span> - <span class='highlight'>Nr indeksu: 234232</span>
-			<p>Edycja danych studenta:</p>
-			<form>
-			<div>
-					<p class='column'>Imię:</p>
-					<input type='text' value='Jan' />
-				</div>
-				<div>
-					<p class='column'>Nazwisko:</p>
-					<input type='text' value='Nowak' />
-				</div>
-				<div>
-					<p class='column'>Adres:</p>
-					<input type='text' value='ul. Wawel 1, 31-333 Kraków' />
-				</div>
-				<div>
-					<p class='column'>Telefon:</p>
-					<input type='text' value='345 567 789' />
-				</div>
-				<div>
-					<p class='column'>Email:</p>
-					<input type='text' value='jannowak@wp.pl' />
-				</div>
+			<p class='title'>Edycja danych studenta:</p>
+			<form class='wide'>
+				<fieldset>
+					<legend>Dane osobowe</legend>
+					<div class='floated-left'>
+						<p class='column'>Imię:</p>
+						<input type='text' value='Jan' />
+					</div>
+					<div class='floated-left'>
+						<p class='column'>Nazwisko:</p>
+						<input type='text' value='Nowak' />
+					</div>
+					<div class='floated-left'>
+						<p class='column'>Adres:</p>
+						<input type='text' value='ul. Wawel 1, 31-333 Kraków' />
+					</div class='floated-left'>
+					<div class='floated-left'>
+						<p class='column'>Telefon:</p>
+						<input type='text' value='345 567 789' />
+					</div>
+					<div class='floated-left'>
+						<p class='column'>Email:</p>
+						<input type='text' value='jannowak@wp.pl' />
+					</div>
+				</fieldset>
+				</form>
+				<form>
 				<div>
 					<p class='column'>Kierunek studiów:</p>
 					<select>
@@ -685,7 +703,7 @@
 				</div>
 			</form>
 
-			<p>Oceny i obecności studenta:</p>
+			<p class='title'>Oceny i obecności studenta:</p>
 
 			<div class='wrapper1'>
 				<input type='radio' name='_semestr' id='_semestr1' checked='checked' />
@@ -740,10 +758,10 @@
 
 		<section class='mockup' id='panel-10'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [6/7]</h2>
+			<h2>Panel pracownika administracji [6/8]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
-			<p>Generowanie raportów:</p>
+			<p class='title'>Statystyki / raporty:</p>
 		
 
 ... TODO ... 
@@ -757,10 +775,10 @@
 
 		<section class='mockup' id='panel-11'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel pracownika administracji [7/7]</h2>
+			<h2>Panel pracownika administracji [7/8]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
-			<p>Definiowanie zakończenia semestru:</p>
+			<p class='title'>Definiowanie zakończenia semestru:</p>
 				<form>
 				<div>
 					<p class='column'>Koniec 1 semestru:</p>
@@ -778,6 +796,68 @@
 			<div class='side-button right'>Wyloguj</div>
 
 		</section>
+
+<hr>
+
+		<section class='mockup' id='panel-12'>
+			<h1>Przyjazny dziekanat</h1>
+			<h2>Panel pracownika administracji [8/8]</h2>
+			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
+
+			<p class='title'>Edytowanie zajęć:</p>
+			
+			<form>
+				<div>
+					<p class='column'>Nazwa:</p>
+					<select>
+						<option>Algorytmika - wykład</option>
+						<option>Algorytmika - laboratorium</option>
+						<option>Sieci komputerowe - laboratorium</option>
+						<option>Podstawy Java - wykład</option>
+						<option>Podstawy Java - laboratorium</option>
+					</select>
+				</div>
+				<div>
+					<p class='column'>Edytuj nazwę:</p>
+					<input type='text' value='Algorytmika - wykład' />
+				</div>
+				<div>
+					<p class='column'>Edytuj kierunek:</p>
+					<select>
+						<option>Elektronika</option>
+						<option>Informatyka</option>
+						<option>Automatyka i Robotyka</option>
+						<option>Elektrotechnika</option>
+					</select>
+				</div>
+					<p class='column'>Edytuj rok:</p>
+					<select>
+						<option>Rok 1</option>
+						<option>Rok 2</option>
+						<option>Rok 3</option>
+						<option>Rok 4</option>
+						<option>Rok 5</option>
+					</select>
+				</div>
+				<div>
+					<fieldset>
+						<legend>Edytuj prowadzących</legend>
+						<p><input id='prow_11' type='checkbox' /> <label for='prow_11'>prof. Gąbka Baltazar</label>
+						<input id='prow_21'type='checkbox' /> <label for='prow_21'>dr Nowak Jan </label><br />
+						<input id='prow_31'type='checkbox' /> <label for='prow_31'>prof. Kowalski Jan</label>
+						<input id='prow_41'type='checkbox' /> <label for='prow_41'>prof. Wiśniewski Henryk</label> </p>
+					</fieldset>
+					<p></p>
+					<input type='submit' value='Zapisz' />
+				</div>
+			</form>
+
+			<div class='side-button left'>Wstecz</div>
+			<div class='side-button right'>Wyloguj</div>
+
+		</section>
+
+<hr>
 
 
 	</body>
