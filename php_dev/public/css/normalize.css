@@ -107,9 +107,9 @@ code, kbd, pre, samp {
 }
 
 button, input, optgroup, select, textarea {
-  color: inherit; 
-  font: inherit; 
-  margin: 0; 
+  color: inherit;
+  font: inherit;
+  margin: 0;
 }
 
 button {
@@ -121,8 +121,8 @@ button, select {
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
-  -webkit-appearance: button; 
-  cursor: pointer; 
+  -webkit-appearance: button;
+  cursor: pointer;
 }
 
 button[disabled], html input[disabled] {
@@ -139,8 +139,8 @@ input {
 }
 
 input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box; 
-  padding: 0; 
+  box-sizing: border-box;
+  padding: 0;
 }
 
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
@@ -148,9 +148,9 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 }
 
 input[type="search"] {
-  -webkit-appearance: textfield; 
+  -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; 
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 

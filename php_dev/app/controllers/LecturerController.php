@@ -9,19 +9,19 @@ class LecturerController
 {
     public function search(Request $request, Response $response)
     {
-        $response->setContent(include '../app/views/lecturerPanelSearch.php');
+        $response->setContent(include '../app/views/lecturer_panel_search.php');
         return $response;
     }
 
     public function searchResults(Request $request, Response $response)
     {
-        $response->setContent(include '../app/views/lecturerPanelSearchResult.php');
+        $response->setContent(include '../app/views/lecturer_panel_search_result.php');
         return $response;
     }
 
     public function resultPanel(Request $request, Response $response)
     {
-        $response->setContent(include '../app/views/lecturerPanelEntity.php');
+        $response->setContent(include '../app/views/lecturer_panel.php');
         return $response;
     }
 }

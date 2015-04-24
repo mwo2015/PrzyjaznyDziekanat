@@ -19,3 +19,18 @@ Bartek R
 <wybaczcie że nie wykorzystałem Javy, ale nie mam czasu na wchodzenie w servlety javowe>
 
  Jave myślę żeby przedstawić jako alternatywę dla PHP - pokazać plusy i minusy obu rozwiązań.
+
+-- 24-04-2015-----------------------------------------------------
+php_dev
+
+Podpiąłem wszystkie strony. Zrobiłem linki możliwe do klikania.
+Działający projekt (makieta rzecz jasna bez DB etc.):
+http://rdnk.pl/mow/php_dev/public/
+
+login to:
+student
+lub:
+administracja
+lub:
+wykladowca
+hasła nie trzeba podawać - nie ma zadnej autoryzacji.

@@ -4,10 +4,10 @@
 <section id='panel-1'>
     <h1>Przyjazny dziekanat</h1>
     <h2>Panel logowania</h2>
-    <form>
+    <form method="post" action="">
         <div>
             <p class='column'>Login:</p>
-            <input type='text' />
+            <input name='login' type='text' />
         </div>
         <div>
             <p class='column'>Hasło:</p>

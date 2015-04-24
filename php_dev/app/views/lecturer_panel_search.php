@@ -4,7 +4,7 @@
     <h1>Przyjazny dziekanat</h1>
     <h2>Panel prowadzącego [1/3]</h2>
     <p>Zalogowano jako: <span class='highlight'>Adam Nowak</span></p>
-    <p>Moje zajęcia:</p>
+    <p class='title'>Moje zajęcia:</p>
     <form>
         <div>
             <p class='column'>Przedmiot:</p>
@@ -15,12 +15,13 @@
             </select>
         </div>
         <div>
-            <p class='column'>Wydział:</p>
+            <p class='column'>Kierunek:</p>
             <select>
                 <option>wszystkie</option>
-                <option>EAIE</option>
-                <option>IMIR</option>
-                <option>IMIC</option>
+                <option>Elektronika</option>
+                <option>Informatyka</option>
+                <option>Automatyka i Robotyka</option>
+                <option>Elektrotechnika</option>
             </select>
         </div>
         <div>
@@ -61,9 +62,9 @@
             </select>
         </div>
     </form>
-    <input type='submit' value='Szukaj' />
+    <a href="/mow/php_dev/public/wykladowca-wyszukaj-wyniki"><input type='submit' value='Szukaj' /></a>
 
-    <div class='side-button right'>Wyloguj</div>
+    <a href="/mow/php_dev/public/"><div class='side-button right'>Wyloguj</div></a>
 </section>
 
 <?php include('partials/footer.php') ?>

@@ -23,12 +23,13 @@ $container->add('Symfony\Component\HttpFoundation\Response');
 $router = new RouteCollection($container);
 
 // PANEL ROUTE
-$router->addRoute('GET', '/', 'Controller\IndexController::indexPage1');
-$router->addRoute('GET', '/2', 'Controller\IndexController::indexPage2');
-$router->addRoute('GET', '/login', 'Controller\IndexController::login');
+$router->addRoute('GET', '/student', 'Controller\IndexController::indexPage');
+$router->addRoute('GET', '/', 'Controller\IndexController::login');
+$router->addRoute('POST', '/', 'Controller\IndexController::login');
 $router->addRoute('GET', '/wykladowca-wyszukaj', 'Controller\LecturerController::search');
 $router->addRoute('GET', '/wykladowca-wyszukaj-wyniki', 'Controller\LecturerController::searchResults');
 $router->addRoute('GET', '/wykladowca-panel', 'Controller\LecturerController::resultPanel');
+$router->addRoute('GET', '/administracja-panel','Controller\AdministrationController::indexPage');
 
 $dispatcher = $router->getDispatcher();
 
