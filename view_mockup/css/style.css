@@ -61,6 +61,13 @@ h1, h2, h3 {
 	text-transform: uppercase;
 }
 
+section h2 {
+	border: solid 1px #A52A2A;
+	border-radius: 4px;
+	margin: 12px auto;
+	padding: 7px;
+	width: 80%;
+} 
 
 section {
 	background: #FFD55E;
@@ -110,6 +117,12 @@ form {
 
 [type='radio'] {
 	margin: .4em;
+}
+
+[type='file'] {
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 2em;
 }
 
 input:focus, [type='submit']:hover {
@@ -182,7 +195,7 @@ select {
 	width: 25px;
 }
 
-#panel-4 form, #panel-7 form, #panel-8 form, #panel-9 form, #panel-10 form, #panel-11 form, #panel-12 form {
+#panel-2 form, #panel-4 form, #panel-7 form, #panel-8 form, #panel-9 form, #panel-10 form, #panel-11 form, #panel-12 form {
 	font-size: 1em;
 }
 
@@ -277,3 +290,11 @@ fieldset {
 	padding: 7px;
 	width: 40%;
 } 
+
+.smaller {
+	font-size: smaller;
+}
+
+.bold {
+	font-weight: bold;
+}

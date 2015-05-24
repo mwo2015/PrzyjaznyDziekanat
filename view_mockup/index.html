@@ -47,24 +47,35 @@
 			<h1>Przyjazny dziekanat</h1>
 			<h2>Panel studenta [1/2]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Jan Kowalski</span> | Tryb studiów: <span class='highlight'>warunkowy</span></p>
-			<div class='wrapper1'>
-				<input type='radio' name='semestr' id='semestr1' checked='checked' />
-				<label for='semestr1'>Semestr 1</label>
-				<br />
-				<input type='radio' name='semestr' id='semestr2' />
-				<label for='semestr2'>Semestr 2</label>
-			</div>
-			<p class='title'>Moje przedmioty:</p>
-			<select>
-				<option>Algorytmika - wykład</option>
-				<option>Algorytmika - laboratorium</option>
-				<option>Sieci komputerowe - laboratorium</option>
-				<option>Podstawy Java - wykład</option>
-				<option>Podstawy Java - laboratorium</option>
-			</select>
-			<br />
+			<p class='title'>Sprawdzenie ocen i obecności:</p>
+			<form>
+				<div>
+					<p class='column'>Przedmiot:</p>
+					<select>
+						<option>Algorytmika - wykład</option>
+						<option>Algorytmika - laboratorium</option>
+						<option>Sieci komputerowe - laboratorium</option>
+						<option>Podstawy Java - wykład</option>
+						<option>Podstawy Java - laboratorium</option>
+					</select>
+				</div>
+				<div>
+					<p class='column'>Semestr:</p>
+					<select>
+						<option>Semestr 1</option>
+						<option>Semestr 2</option>
+						<option>Semestr 3</option>
+						<option>Semestr 4</option>
+						<option>Semestr 5</option>
+						<option>Semestr 6</option>
+						<option>Semestr 7</option>
+						<option>Semestr 8</option>
+						<option>Semestr 9</option>
+						<option>Semestr 10</option>
+					</select>
+				</div>
+			</form>
 			<input type='submit' value='OK' />
-
 			<div class='side-button right'>Wyloguj</div>
 		</section>
 
@@ -92,7 +103,7 @@
 
 		<section class='mockup' id='panel-4'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel prowadzącego [1/3]</h2>
+			<h2>Panel prowadzącego [1/4]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Adam Nowak</span></p>
 			<p class='title'>Moje zajęcia:</p>
 			<form>
@@ -142,15 +153,6 @@
 						<option>Semestr 2</option>
 					</select>
 				</div>
-				<div>
-					<p class='column'>Grupa:</p>
-					<select>
-						<option>wszystkie</option>
-						<option>Grupa 1</option>
-						<option>Grupa 2</option>
-						<option>Grupa 3</option>
-					</select>
-				</div>
 			</form>
 			<input type='submit' value='Szukaj' />
 
@@ -161,7 +163,7 @@
 
 		<section class='mockup' id='panel-5'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel prowadzącego [2/3]</h2>
+			<h2>Panel prowadzącego [2/4]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Adam Nowak</span></p>
 			<p class='title'>Znaleziono zajęcia:</p>
 			<table>
@@ -223,7 +225,7 @@
 
 		<section class='mockup' id='panel-6'>
 			<h1>Przyjazny dziekanat</h1>
-			<h2>Panel prowadzącego [3/3]</h2>
+			<h2>Panel prowadzącego [3/4]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Adam Nowak</span></p>
 			<p>Wybrano: <span class='highlight'>Podstawy Java - laboratorium</span> - <span class='highlight'>Informatyka</span> - <span class='highlight'>Studia dzienne</span> - <span class='highlight'>Rok 3</span> - <span class='highlight'>Semestr 1</span> - <span class='highlight'>Grupa 1</span></p>
 
@@ -244,13 +246,12 @@
 						<th>Z10<br /><input type='checkbox' title='Obecność prowadzącego' /></th>
 						<th>Z11<br /><input type='checkbox' title='Obecność prowadzącego' /></th>
 						<th>Z12<br /><input type='checkbox' title='Obecność prowadzącego' /></th>
-						<th>Oceny cząstkowe</th>
-						<th>Ocena końcowa</th>
+						<th>Wybór</th>
 				</thead>	
 				<tbody>
 					<tr>
 						<td><input type='checkbox' checked='checked' title='Zaznacz studenta' /></td>
-						<td>Adamowicz Adam</td>
+						<td class='bold'>Adamowicz Adam</td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
@@ -263,20 +264,11 @@
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
-						<td>
-							<input class='grades partial' type='input' checked='checked' value='2' />
-							<input class='grades partial' type='input' checked='checked' value='2' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-						</td>
-						<td><input class='grades total' type='input' checked='checked' value='2' /></td>
+						<td><a href='#'>Wybierz</a></td>
 					</tr>
 					<tr>
 						<td><input type='checkbox' checked='checked' title='Zaznacz studenta' /></td>
-						<td>Domownik Jan</td>
+						<td class='bold'>Domownik Jan</td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
@@ -289,20 +281,11 @@
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
-						<td>
-							<input class='grades partial' type='input' checked='checked' value='2' />
-							<input class='grades partial' type='input' checked='checked' value='5' />
-							<input class='grades partial' type='input' checked='checked' value='3' />
-							<input class='grades partial' type='input' checked='checked' value='5' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-						</td>
-						<td><input class='grades total' type='input' checked='checked' value='4' /></td>
+						<td><a href='#'>Wybierz</a></td>
 					</tr>
 					<tr>
 						<td><input type='checkbox' checked='checked' title='Zaznacz studenta' /></td>
-						<td>Kamilowicz Kamil</td>
+						<td class='bold'>Kamilowicz Kamil</td>
 						<td><input type='checkbox' title='Obecność' /></td>
 						<td><input type='checkbox' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
@@ -315,20 +298,11 @@
 						<td><input type='checkbox' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
-						<td>
-							<input class='grades partial' type='input' checked='checked' value='5' />
-							<input class='grades partial' type='input' checked='checked' value='5' />
-							<input class='grades partial' type='input' checked='checked' value='3' />
-							<input class='grades partial' type='input' checked='checked' value='5' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-						</td>
-						<td><input class='grades total' type='input' checked='checked' value='4.5' /></td>
+						<td><a href='#'>Wybierz</a></td>
 					</tr>
 					<tr>	
 						<td><input type='checkbox' checked='checked' title='Zaznacz studenta' /></td>
-						<td>Piotrowski Piotr</td>
+						<td class='bold'>Piotrowski Piotr</td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' title='Obecność' /></td>
@@ -341,16 +315,7 @@
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
 						<td><input type='checkbox' checked='checked' title='Obecność' /></td>
-						<td>
-							<input class='grades partial' type='input' checked='checked' value='2' />
-							<input class='grades partial' type='input' checked='checked' value='5' />
-							<input class='grades partial' type='input' checked='checked' value='3' />
-							<input class='grades partial' type='input' checked='checked' value='5' />
-							<input class='grades partial' type='input' checked='checked' value='6' />
-							<input class='grades partial' type='input' checked='checked' value='6' />
-							<input class='grades partial' type='input' checked='checked' value='' />
-						</td>
-						<td><input class='grades total' type='input' checked='checked' value='5' /></td>
+						<td><a href='#'>Wybierz</a></td>
 					</tr>
 				</tbody>	
 			</table>
@@ -365,40 +330,82 @@
 
 <hr>
 
+		<section class='mockup' id='panel-6a'>
+			<h1>Przyjazny dziekanat</h1>
+			<h2>Panel prowadzącego [4/4]</h2>
+			<p>Zalogowano jako: <span class='highlight'>Adam Nowak</span></p>
+			<p>Wybrano: <span class='highlight'>Podstawy Java - laboratorium</span> - <span class='highlight'>Informatyka</span> - <span class='highlight'>Studia dzienne</span> - <span class='highlight'>Rok 3</span> - <span class='highlight'>Semestr 1</span> - <span class='highlight'>Grupa 1</span></p>
+
+			<p class='title'>Oceny studenta:</p>
+			<table>
+				<thead>
+						<th>Student</th>
+						<th>Oceny cząstkowe</th>
+						<th>Ocena końcowa</th>
+				</thead>	
+				<tbody>
+					<tr>
+						<td>Adamowicz Adam</td>
+						<td>
+							<input class='grades partial' type='input' checked='checked' value='2' />
+							<input class='grades partial' type='input' checked='checked' value='2' />
+							<input class='grades partial' type='input' checked='checked' value='4' />
+							<input class='grades partial' type='input' checked='checked' value='3.5' />
+							<input class='grades partial' type='input' checked='checked' value='' />
+							<input class='grades partial' type='input' checked='checked' value='' />
+							<input class='grades partial' type='input' checked='checked' value='' />
+							<input class='grades partial' type='input' checked='checked' value='' />
+							<input class='grades partial' type='input' checked='checked' value='' />
+							<input class='grades partial' type='input' checked='checked' value='' />
+							<input class='grades partial' type='input' checked='checked' value='' />
+							<input class='grades partial' type='input' checked='checked' value='' />
+							<input class='grades partial' type='input' checked='checked' value='' />
+						</td>
+						<td><input class='grades total' type='input' checked='checked' value='2' /></td>
+					</tr>
+				</tbody>	
+			</table>
+			<p></p>
+			<input type='submit' value='Zapisz zmiany' />
+
+			<div class='side-button left'>Wstecz</div>
+			<div class='side-button right'>Wyloguj</div>
+
+		</section>
+
+<hr>
+
 		<section class='mockup' id='panel-6'>
 			<h1>Przyjazny dziekanat</h1>
 			<h2>Panel pracownika administracji [1/8]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
-			<p class='title'>Dostępne czynności:</p>
-			<table>
-				<thead>
-						<th>Studenci</th>
-						<th>Prowadzący</th>
-						<th>Zajęcia</th>
-						<th>Inne</th>
-				</thead>	
-				<tbody>
-					<tr>
-						<td><a href='#'>Dodaj</a></td>
-						<td><a href='#'>Dodaj</a></td>
-						<td><a href='#'>Dodaj</a></td>
-						<td><a href='#'>Statystyki / raporty</a></td>
-					</tr>
-					<tr>
-						<td><a href='#'>Edytuj</a></td>
-						<td><a href='#'>Edytuj</a></td>
-						<td><a href='#'>Edytuj</a></td>
-						<td><a href='#'>Zakończenie semestru</a></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-				</tbody>	
-			</table>
+			<p class='title'>Najczęściej używane czynności:</p>
+
+			<p>
+				<a href='#'>Dodaj studentów</a>
+				<a href='#'>Edytuj dane studentów</a>
+				<a href='#'>Generuj raporty</a>
+				<a href='#'>Wyślij maile</a>
+			</p>
+		
+			<p class='title'>Wszystkie dostępne czynności:</p>
+
+			<p>
+				<a href='#' class='smaller'>Dodaj studentów</a>
+				<a href='#' class='smaller'>Dodaj prowadzących</a>
+				<a href='#' class='smaller'>Dodaj zajęcia</a>
+			</p>
+			<p>
+				<a href='#' class='smaller'>Edytuj dane studentów</a>
+				<a href='#' class='smaller'>Edytuj dane prowadzących</a>
+				<a href='#' class='smaller'>Edytuj dane zajęć</a>
+			</p>
+			<p>
+				<a href='#' class='smaller'>Generuj raporty</a>
+				<a href='#' class='smaller'>Wyślij maile</a>
+				<a href='#' class='smaller'>Zdefiniuj koniec semestru</a>
+			</p>
 			
 			<div class='side-button left'>Wstecz</div>
 			<div class='side-button right'>Wyloguj</div>
@@ -411,6 +418,17 @@
 			<h1>Przyjazny dziekanat</h1>
 			<h2>Panel pracownika administracji [2/8]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
+
+			<p class='title'>Import listy studentów:</p>
+				<form class='wide'>
+					<fieldset>
+						<legend>Importuj listę studentów z pliku Excel</legend>
+							<p class='column'>Wybierz plik:</p>
+							<input type='file' />
+							<br />
+							<input type='submit' value='Importuj' />
+					</fieldset>
+				</form>
 
 			<p class='title'>Dodanie studenta:</p>
 			
@@ -464,7 +482,16 @@
 					</select>
 				</div>
 				<div>
-					<p class='column'>Grupa:</p>
+					<p class='column'>Grupa dziekanatowa:</p>
+					<select>
+						<option>Grupa 1</option>
+						<option>Grupa 2</option>
+						<option>Grupa 3</option>
+						<option>Grupa 4</option>
+					</select>
+				</div>
+				<div>
+					<p class='column'>Grupa laboratoryjna:</p>
 					<select>
 						<option>Grupa 1</option>
 						<option>Grupa 2</option>
@@ -705,13 +732,21 @@
 
 			<p class='title'>Oceny i obecności studenta:</p>
 
-			<div class='wrapper1'>
-				<input type='radio' name='_semestr' id='_semestr1' checked='checked' />
-				<label for='_semestr1'>Semestr 1</label>
-				<br />
-				<input type='radio' name='_semestr' id='_semestr2' />
-				<label for='_semestr2'>Semestr 2</label>
-			</div>
+				<div>
+					<p class='column'>Semestr:</p>
+					<select>
+						<option>Semestr 1</option>
+						<option>Semestr 2</option>
+						<option>Semestr 3</option>
+						<option>Semestr 4</option>
+						<option>Semestr 5</option>
+						<option>Semestr 6</option>
+						<option>Semestr 7</option>
+						<option>Semestr 8</option>
+						<option>Semestr 9</option>
+						<option>Semestr 10</option>
+					</select>
+				</div>
 			<p></p>
 			<table>
 				<thead>
@@ -761,7 +796,7 @@
 			<h2>Panel pracownika administracji [6/8]</h2>
 			<p>Zalogowano jako: <span class='highlight'>Ktoś z dziekanatu</span></p>
 
-			<p class='title'>Statystyki / raporty:</p>
+			<p class='title'>Raporty:</p>
 		
 			<form class='wide'>
 				<fieldset>
